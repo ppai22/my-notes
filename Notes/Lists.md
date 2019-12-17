@@ -13,7 +13,7 @@ for i in range(1, 6):
 li = [i for i in range(1, 6)]
 ```
 
-##2 - Flatten a list of lists
+## 2 - Flatten a list of lists
 
 ```
 flat_list = []
@@ -21,7 +21,7 @@ for sub_list in li:
 	for item in sub_list:
 		flat_list.append(item)
 ```
-This is the same as
+##### This is the same as
 ```
 flat_list = [item for sub_list in li for item in sub_list]
 ```
