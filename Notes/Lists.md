@@ -21,7 +21,7 @@ for sub_list in li:
 	for item in sub_list:
 		flat_list.append(item)
 ```
-This is the same as
+##### This is the same as
 ```
 flat_list = [item for sub_list in li for item in sub_list]
 ```
