@@ -13,7 +13,7 @@ for i in range(1, 6):
 li = [i for i in range(1, 6)]
 ```
 
-##2 - Flatten a list of lists
+## 2 - Flatten a list of lists
 
 ```
 flat_list = []
