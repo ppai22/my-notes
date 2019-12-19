@@ -13,6 +13,7 @@ for root, dirs, files in os.walk(r'.\Notes'):
                     if re.match(r'##\s', line):
                         note_title = line.split('## ')[-1].strip('\n')
                         note_link = re.sub(' ', '-', note_title.lower())
+                        note_link = re.sub('[.()]', '', note_link.lower())
                         notes.append((note_title, repo + file + '#' + note_link))
 
 with open(r'.\README.md', 'w+') as readme:
