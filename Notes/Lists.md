@@ -25,3 +25,4 @@ for sub_list in li:
 ```python
 flat_list = [item for sub_list in li for item in sub_list]
 ```
+[Reference](https://stackoverflow.com/questions/952914/how-to-make-a-flat-list-out-of-list-of-lists)
