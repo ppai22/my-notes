@@ -1,6 +1,6 @@
 ## 1 - List Comprehensions
 
-##### For loop that generates list of first five numbers
+For loop that generates list of first five numbers
 ```python
 li = []
 for i in range(1, 6):
@@ -8,7 +8,7 @@ for i in range(1, 6):
 
 # li = [1, 2, 3, 4, 5]
 ```
-##### List comprehension to do the same
+List comprehension to do the same
 ```python
 li = [i for i in range(1, 6)]
 ```
@@ -21,7 +21,7 @@ for sub_list in li:
 	for item in sub_list:
 		flat_list.append(item)
 ```
-##### This is the same as
+This is the same as
 ```python
 flat_list = [item for sub_list in li for item in sub_list]
 ```
@@ -29,7 +29,7 @@ flat_list = [item for sub_list in li for item in sub_list]
 
 ## 3 - Reverse a list
 
-##### There are 3 methods to reverse a list in python
+There are 3 methods to reverse a list in python
 
 ##### Method 1: Use of reverse()
 reverse() just reverses the list in-place
