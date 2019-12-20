@@ -25,7 +25,7 @@ with open(r'.\README2.md', 'w+') as readme:
     readme.write('|LINKS|\n')
     readme.write('|------|\n')
     for category in categories.keys():
-        readme.write('##### ' + '|' + category + '|' + '\n')
+        readme.write('|' + '**' + category + '**' + '|' + '\n')
         readme.write('|' + '<ul>')
         for note in categories[category]:
             readme.write('<li>' + '[' + note[0] + ']' + '(' + note[1] + ')' + '</li>')
