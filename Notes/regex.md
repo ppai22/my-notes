@@ -46,7 +46,7 @@ A lookaround is used to find overlapping matches using re.findall()
 
 ## 5 - re.sub()
 
-re.sub() is used to substitute a particular pattern with another string
+re.sub() is used to substitute a particular pattern with another string<br>
 Syntax
 ```python
 re.sub(pattern, replacement_string, string)
@@ -57,7 +57,7 @@ Statement to replace all '-'s in the string with '*'s
 >>> re.sub('-', '*', s)
 'A*B*C*D*E*F*G*H'
 ```
-re.sub() can also be used with 'count' parameter to substitute the first n instances only
+re.sub() can also be used with 'count=n' parameter to substitute the first n instances only
 ```python
 >>> s = 'A-B-C-D-E-F-G-H'
 >>> re.sub('-', '*', s, count=3)
