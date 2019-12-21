@@ -43,3 +43,24 @@ A lookaround is used to find overlapping matches using re.findall()
 ['LOL', 'LOL', 'LOL']
 ```
 [Reference](https://stackoverflow.com/questions/11430863/how-to-find-overlapping-matches-with-a-regexp)
+
+## 5 - re.sub()
+
+re.sub() is used to substitute a particular pattern with another string
+Syntax
+```python
+re.sub(pattern, replacement_string, string)
+```
+Statement to replace all '-'s in the string with '*'s
+```python
+>>> s = 'A-B-C-D-E-F-G-H'
+>>> re.sub('-', '*', s)
+'A*B*C*D*E*F*G*H'
+```
+re.sub() can also be used with 'count' parameter to substitute the first n instances only
+```python
+>>> s = 'A-B-C-D-E-F-G-H'
+>>> re.sub('-', '*', s, count=3)
+'A*B*C*D-E-F-G-H'
+```
+Expression needs to be stored in another variable to access the substituted string again.
