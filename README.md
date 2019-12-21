@@ -3,7 +3,7 @@
 |LINKS|
 |------|
 |**Dictionaries**|
-|<ul><li>[1 - OrderedDict](https://github.com/ppai22/my-notes/blob/master/Notes/Dictionaries.md#1---ordereddict)</li></ul>|
+|<ul><li>[1 - OrderedDict](https://github.com/ppai22/my-notes/blob/master/Notes/Dictionaries.md#1---ordereddict)</li><li>[2 - Dictionary comprehensions](https://github.com/ppai22/my-notes/blob/master/Notes/Dictionaries.md#2---dictionary-comprehensions)</li></ul>|
 |**Lists**|
 |<ul><li>[1 - List Comprehensions](https://github.com/ppai22/my-notes/blob/master/Notes/Lists.md#1---list-comprehensions)</li><li>[2 - Flatten a list of lists](https://github.com/ppai22/my-notes/blob/master/Notes/Lists.md#2---flatten-a-list-of-lists)</li><li>[3 - Reverse a list](https://github.com/ppai22/my-notes/blob/master/Notes/Lists.md#3---reverse-a-list)</li></ul>|
 |**pandas**|
