@@ -6,6 +6,8 @@
 |<ul><li>[1 - OrderedDict](https://github.com/ppai22/my-notes/blob/master/Notes/Dictionaries.md#1---ordereddict)</li><li>[2 - Dictionary comprehensions](https://github.com/ppai22/my-notes/blob/master/Notes/Dictionaries.md#2---dictionary-comprehensions)</li></ul>|
 |**Lists**|
 |<ul><li>[1 - List Comprehensions](https://github.com/ppai22/my-notes/blob/master/Notes/Lists.md#1---list-comprehensions)</li><li>[2 - Flatten a list of lists](https://github.com/ppai22/my-notes/blob/master/Notes/Lists.md#2---flatten-a-list-of-lists)</li><li>[3 - Reverse a list](https://github.com/ppai22/my-notes/blob/master/Notes/Lists.md#3---reverse-a-list)</li></ul>|
+|**ML**|
+|<ul><li>[1 - K-Means Clustering algorithm](https://github.com/ppai22/my-notes/blob/master/Notes/ML.md#1---k-means-clustering-algorithm)</li></ul>|
 |**pandas**|
 |<ul><li>[1 - Dataframe from dictionary](https://github.com/ppai22/my-notes/blob/master/Notes/pandas.md#1---dataframe-from-dictionary)</li><li>[2 - Copy columns from one dataframe to new dataframe](https://github.com/ppai22/my-notes/blob/master/Notes/pandas.md#2---copy-columns-from-one-dataframe-to-new-dataframe)</li><li>[3 - Drop columns from a dataframe](https://github.com/ppai22/my-notes/blob/master/Notes/pandas.md#3---drop-columns-from-a-dataframe)</li></ul>|
 |**regex**|
