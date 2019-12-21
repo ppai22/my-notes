@@ -8,5 +8,4 @@ Steps:
 3. Compute new centroid for each cluster
 4. Repeat steps 2 and 3 until none of the centroids change
 
-[Reference](https://mubaris.com/posts/kmeans-clustering/)<br>
-[Python implementation](https://github.com/ppai22/k-means-clustering-python)
+[Reference](https://mubaris.com/posts/kmeans-clustering/) | [Python implementation](https://github.com/ppai22/k-means-clustering-python)
