@@ -8,7 +8,7 @@ df = pandas.DataFrame.from_dict(data)
 ```
 Yes, I am a cricket geek.
 
-# 2 - Copy columns from one dataframe to new dataframe
+## 2 - Copy columns from one dataframe to new dataframe
 
 ```python
 data = {'Man Utd': ['Rashford', 'Martial', 'James'],
@@ -22,7 +22,7 @@ To copy only the columns relevant to the Manchester clubs to a new dataframe:
 new = old[['Man Utd', 'Man City']].copy()
 ```
 
-# 3 - Drop columns from a dataframe
+## 3 - Drop columns from a dataframe
 
 ```python
 data = {'Man Utd': ['Rashford', 'Martial', 'James'],
