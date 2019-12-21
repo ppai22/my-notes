@@ -29,4 +29,3 @@ with open(r'.\README.md', 'w+') as readme:
         for note in categories[category]:
             readme.write('<li>' + '[' + note[0] + ']' + '(' + note[1] + ')' + '</li>')
         readme.write('</ul>' + '|' + '\n')
-# Test
