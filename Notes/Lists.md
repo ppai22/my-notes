@@ -25,7 +25,11 @@ This is the same as
 ```python
 flat_list = [item for sub_list in li for item in sub_list]
 ```
+This method only works for level 1 of sub-lists.
+So, if ```li = [[1, 2], [3, 4, 5], [6, 7]]```, then ```flat_list = [1, 2, 3, 4, 5, 6, 7]```
+But if ```li = [[1, 2], [3, [4, 5]], [6, 7]]```, then ```flat_list = [1, 2, 3, [4, 5], 6, 7]```
 [Reference](https://stackoverflow.com/questions/952914/how-to-make-a-flat-list-out-of-list-of-lists)
+
 
 ## 3 - Reverse a list
 
