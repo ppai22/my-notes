@@ -46,8 +46,7 @@ A lookaround is used to find overlapping matches using re.findall()
 
 ## 5 - re.sub()
 
-re.sub() is used to substitute a particular pattern with another string<br>
-Syntax
+re.sub() is used to substitute a particular pattern with another string
 ```python
 re.sub(pattern, replacement_string, string)
 ```
