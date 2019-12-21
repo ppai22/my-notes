@@ -21,6 +21,7 @@ To copy only the columns relevant to the Manchester clubs to a new dataframe:
 ```python
 new = old[['Man Utd', 'Man City']].copy()
 ```
+Yes, I love football too.
 
 ## 3 - Drop columns from a dataframe
 
