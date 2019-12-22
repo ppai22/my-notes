@@ -79,4 +79,5 @@ The aim is to sort a list of tuples by the first value of the tuple
 ```
 
 To sort in reverse order, use ```reverse=True``` as a parameter<br>
-To sort inplace, use ```li.sort(<itemgetter/lambda>)<br>
+To sort inplace, use ```li.sort(<itemgetter/lambda>)```<br>
+[Reference](https://stackoverflow.com/questions/10695139/sort-a-list-of-tuples-by-2nd-item-integer-value)
