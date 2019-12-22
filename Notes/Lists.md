@@ -58,3 +58,25 @@ reversed() returns an iterator that accesses the list in reverse order
 >>> li[::-1]
 [5, 4, 3, 2, 1]
 ```
+
+## 4 - Sort a list of tuples by value
+
+The aim is to sort a list of tuples by the first value of the tuple
+
+##### Method 1: Using lambda function
+```python
+>>> li = [(3, 'c'), (5, 'e'), (2, 'b'), (1, 'a'), (4, 'd')]
+>>> sorted(li, key=lambda x: x[0])
+[(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd'), (5, 'e')]
+```
+
+##### Method 2: Using operator.itemgetter
+```python
+>>> from operator import itemgetter
+>>> li = [(3, 'c'), (5, 'e'), (2, 'b'), (1, 'a'), (4, 'd')]
+>>> sorted(li, key=itemgetter(0))
+[(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd'), (5, 'e')]
+```
+
+To sort in reverse order, use ```reverse=True``` as a parameter<br>
+To sort inplace, use ```li.sort(<itemgetter/lambda>)<br>
