@@ -81,3 +81,25 @@ The aim is to sort a list of tuples by the first value of the tuple
 To sort in reverse order, use ```reverse=True``` as a parameter<br>
 To sort inplace, use ```li.sort(<itemgetter/lambda>)```<br>
 [Reference](https://stackoverflow.com/questions/10695139/sort-a-list-of-tuples-by-2nd-item-integer-value)
+
+## 5 - if-else inside a List Comprehension
+
+```python
+li = [1, 2, 3, 4, 5, 6]
+output =[]
+for i in li:
+    if i%2 == 0:
+        output.append((i, 'EVEN'))
+    else:
+        output.append((i,'ODD'))
+print(output)
+```
+The above code would give:
+```python
+[(1, 'ODD'), (2, 'EVEN'), (3, 'ODD'), (4, 'EVEN'), (5, 'ODD'), (6, 'EVEN')]
+```
+The same could be achieved using a simple list comprehension as shown below:
+```python
+output = [(i, 'EVEN') if i%2 == 0 else (i, 'ODD') for i in li]
+```
+[Reference](https://stackoverflow.com/questions/4260280/if-else-in-a-list-comprehension)
