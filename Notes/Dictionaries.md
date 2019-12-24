@@ -22,3 +22,20 @@ dict_items([('A', 1), ('B', 2), ('C', 3)])
 >>> new_dict
 {'A': 1, 'B': 4, 'C': 9}
 ```
+
+## 3 - Write/Read data to/from a JSON file
+
+```python
+import json
+```
+Write:
+```python
+data = {'One': 1, 'Two': 2, 'Three': 3}
+with open('data.json', 'w+') as f:
+    json.dump(data, f)
+```
+Read:
+```python
+with open('data.json', 'r+') as f:
+    data = json.load(f)
+```
