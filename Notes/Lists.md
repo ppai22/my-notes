@@ -103,3 +103,17 @@ The same could be achieved using a simple list comprehension as shown below:
 output = [(i, 'EVEN') if i%2 == 0 else (i, 'ODD') for i in li]
 ```
 [Reference](https://stackoverflow.com/questions/4260280/if-else-in-a-list-comprehension)
+
+## 6 - Index of element in a list
+
+```python
+>>> li = ['V Kohli', 'S Smith', 'K Williamson', 'D Warner', 'J Root', 'B Azam']
+>>> li.index('S Smith')
+1
+```
+
+```python
+>>> li = [[9, 0, 3], [3, 8, 2], [5, 6, 0], [7, 2, 9], [4, 2, 9]]
+>>> li.index([5, 6, 0])
+2
+```
