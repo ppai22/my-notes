@@ -41,3 +41,37 @@ Another way to specify to drop columns is
 ```python
 new = old.drop(columns=['Man Utd', 'Man City'])
 ```
+
+## 4 - Access columns using column names
+
+Dataframe used:
+```python
+>>> dataset = {'India': ['Delhi', 'Mumbai', 'Bengaluru', 'Mumbai'],
+          'Australia': ['Melbourne', 'Sydney', 'Brisbane', 'Perth'],
+          'South Africa': ['Pretoria', 'Cape Town', 'Durban', 'Bloemfontein']}
+>>> df = pd.DataFrame(dataset)
+```
+
+```python
+>>> df['India']
+0        Delhi
+1       Mumbai
+2    Bengaluru
+3       Mumbai
+```
+
+```python
+>>> df.India
+0        Delhi
+1       Mumbai
+2    Bengaluru
+3       Mumbai
+```
+
+## 5 - Fetching unique elements from a column
+
+Making use of data frame from above article:
+```python
+>>> df.India.unique()
+array(['Delhi', 'Mumbai', 'Bengaluru'], dtype=object)
+```
