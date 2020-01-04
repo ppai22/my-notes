@@ -39,3 +39,16 @@ Read:
 with open('data.json', 'r+') as f:
     data = json.load(f)
 ```
+
+## 4 - Accessing key,value pairs
+
+```python
+dict_1 = {'a': 1, 'b': 2, 'c': 3}
+for key in dict_1:
+    print(key, dict_1[key])
+```
+is the same as
+```python
+for key, value in dict_1.items():
+    print(key, value)
+```

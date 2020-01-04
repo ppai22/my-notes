@@ -117,3 +117,12 @@ output = [(i, 'EVEN') if i%2 == 0 else (i, 'ODD') for i in li]
 >>> li.index([5, 6, 0])
 2
 ```
+
+## 7 - Sum of second values in list of tuples
+
+```python
+>>> li = [('Kohli', 10), ('Smith', 4), ('Warner', 9), ('Williamson', 9)]
+>>> sum(ducks for name, ducks in li)
+32
+```
+[Reference](https://stackoverflow.com/questions/12218112/sum-the-second-value-of-each-tuple-in-a-list)
