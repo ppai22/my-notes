@@ -90,4 +90,4 @@ To sort the teams based on points and then by wins if there is a tie:
 ```python
 df = df.sort_values(by=['Points', 'Wins'])
 ```
-[Reference]('https://thispointer.com/pandas-sort-rows-or-columns-in-dataframe-based-on-values-using-dataframe-sort_values/')
+[Reference](https://thispointer.com/pandas-sort-rows-or-columns-in-dataframe-based-on-values-using-dataframe-sort_values/)
