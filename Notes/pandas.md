@@ -75,3 +75,19 @@ Making use of data frame from above article:
 >>> df.India.unique()
 array(['Delhi', 'Mumbai', 'Bengaluru'], dtype=object)
 ```
+
+## 6 - Sort Dataframe by column values
+
+```python
+pl_dict = {'Man Utd': [3, 1, 1, 10], 'Man City': [4, 0, 1, 12], 'Arsenal': [2, 0, 3, 6], 'Chelsea': [1, 3, 2, 6]}
+df = pandas.DataFrame(pl_dict, columns=['Wins', 'Draws', 'Losses', 'Points'])
+```
+To sort the teams by points:
+```python
+df = df.sort_values(by='Points')
+```
+To sort the teams based on points and then by wins if there is a tie:
+```python
+df = df.sort_values(by=['Points', 'Wins'])
+```
+[Reference]('https://thispointer.com/pandas-sort-rows-or-columns-in-dataframe-based-on-values-using-dataframe-sort_values/')
