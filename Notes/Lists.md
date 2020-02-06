@@ -126,3 +126,13 @@ output = [(i, 'EVEN') if i%2 == 0 else (i, 'ODD') for i in li]
 32
 ```
 [Reference](https://stackoverflow.com/questions/12218112/sum-the-second-value-of-each-tuple-in-a-list)
+
+## 8 - Unpacking lists to formatted strings
+
+```python
+import datetime
+
+y, m, d = str(datetime.datetime.now().date()).split('-')
+print(f"{d}/{m}/{y}")
+```
+`Output: 06/02/2020`
