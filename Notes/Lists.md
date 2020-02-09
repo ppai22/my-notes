@@ -136,3 +136,68 @@ y, m, d = str(datetime.datetime.now().date()).split('-')
 print(f"{d}/{m}/{y}")
 ```
 `Output: 06/02/2020`
+
+## 9 - Splitting strings in Python
+
+The `split()` function can be used to split strings in python into a list.
+
+```python
+>>> str = 'one two three four five'
+>>> print(str.split())
+['one', 'two', 'three', 'four', 'five']
+>>> print(type(str.split()))
+<class 'list'>
+```
+
+Splitting of strings can be done based on delimiter
+```python
+>>> str_dashed = 'one-two-three-four-five'
+>>> print(str_dashed.split('-'))
+['one', 'two', 'three', 'four', 'five']
+```
+
+split() also can take a parameter maxsplit to split string into certain number of splits
+```python
+>>> print(str.split(' ', 2)) #maxsplit=2
+['one', 'two', 'three four five']
+```
+
+To split from the right side, `rsplit()` can be used
+```python
+>>> print(str.rsplit(' ', 2))
+['one two three', 'four', 'five']
+```
+
+To split strings based on '\n' characters, `split()` or `splitlines()` could be used
+```python
+>>> str_lines = 'one\ntwo\nthree\nfour\nfive'
+>>> print(str_lines.split())
+['one', 'two', 'three', 'four', 'five']
+>>> print(str_lines.split('\n'))
+['one', 'two', 'three', 'four', 'five']
+>>> print(str_lines.splitlines())
+['one', 'two', 'three', 'four', 'five']
+```
+
+split() recognises both newline and space when no seperator is explicitly mentioned
+```python
+>>> str_mixed = 'one two\nthree four'
+['one', 'two', 'three', 'four']
+```
+
+To join these split strings back join() method is used
+```python
+>>> li = ['one', 'two', 'three', 'four', 'five']
+>>> '***'.join(li)
+'one***two***three***four***five'
+```
+
+Splitting based on regular expressions acn be done using split() from re module
+```python
+>>> import re
+>>> str_reg = 'one-two*three+four#five'
+>>> print(re.split('[-*+#]', str_reg))
+['one', 'two', 'three', 'four', 'five']
+```
+
+[Reference](https://note.nkmk.me/en/python-split-rsplit-splitlines-re/)
