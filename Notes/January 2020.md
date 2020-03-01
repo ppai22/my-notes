@@ -1,4 +1,59 @@
-## 1 - List Comprehensions
+## 1 - OrderedDict
+Tags: Dictionaries<br>
+Python dictionaries are unordered i.e. they do not remember the way in which keys are initialized.
+The collections module has a dictionary sub-class OrderedDict() that remembers the order in which keys were initialized.
+```python
+from collections import OrderedDict
+d = OrderedDict()
+d['India'] = 'Virat Kohli'
+d['Australia'] = 'Steve Smith'
+d['New Zealandd'] = 'Kane Williamson'
+```
+From Python 3.7, dictionaries in python are ordered [Reference](https://stackoverflow.com/questions/39980323/are-dictionaries-ordered-in-python-3-6)
+
+## 2 - Dictionary comprehensions
+Tags: Dictionaries<br>
+Similar to list comprehensions, dictionary comprehensions allow initializing new dictionary with a single line of code by avoiding for loops
+```python
+>>> dict_1 = {'A': 1, 'B': 2, 'C': 3}
+>>> dict_1.items()
+dict_items([('A', 1), ('B', 2), ('C', 3)])
+>>> new_dict = {key:val**2 for (key,val) in dict_1.items()}
+>>> new_dict
+{'A': 1, 'B': 4, 'C': 9}
+```
+
+## 3 - Write/Read data to/from a JSON file
+Tags: JSON<br>
+```python
+import json
+```
+Write:
+```python
+data = {'One': 1, 'Two': 2, 'Three': 3}
+with open('data.json', 'w+') as f:
+    json.dump(data, f)
+```
+Read:
+```python
+with open('data.json', 'r+') as f:
+    data = json.load(f)
+```
+
+## 4 - Accessing key,value pairs
+Tags: Dictionaries<br>
+```python
+dict_1 = {'a': 1, 'b': 2, 'c': 3}
+for key in dict_1:
+    print(key, dict_1[key])
+```
+is the same as
+```python
+for key, value in dict_1.items():
+    print(key, value)
+```
+
+## 5 - List Comprehensions
 Tags: Lists<br>
 For loop that generates list of first five numbers
 ```python
@@ -13,7 +68,7 @@ List comprehension to do the same
 li = [i for i in range(1, 6)]
 ```
 
-## 2 - Flatten a list of lists
+## 6 - Flatten a list of lists
 Tags: Lists<br>
 ```python
 flat_list = []
@@ -31,7 +86,7 @@ But if ```li = [[1, 2], [3, [4, 5]], [6, 7]]```, then ```flat_list = [1, 2, 3, [
 [Reference](https://stackoverflow.com/questions/952914/how-to-make-a-flat-list-out-of-list-of-lists)
 
 
-## 3 - Reverse a list
+## 7 - Reverse a list
 Tags: Lists<br>
 There are 3 methods to reverse a list in python
 
@@ -59,7 +114,7 @@ reversed() returns an iterator that accesses the list in reverse order
 [5, 4, 3, 2, 1]
 ```
 
-## 4 - Sort a list of tuples by value
+## 8 - Sort a list of tuples by value
 Tags: Lists<br>
 The aim is to sort a list of tuples by the first value of the tuple
 
@@ -82,7 +137,7 @@ To sort in reverse order, use ```reverse=True``` as a parameter<br>
 To sort inplace, use ```li.sort(<itemgetter/lambda>)```<br>
 [Reference](https://stackoverflow.com/questions/10695139/sort-a-list-of-tuples-by-2nd-item-integer-value)
 
-## 5 - if-else inside a List Comprehension
+## 9 - if-else inside a List Comprehension
 Tags: Lists<br>
 ```python
 li = [1, 2, 3, 4, 5, 6]
@@ -118,7 +173,7 @@ Tags: Lists<br>
 2
 ```
 
-## 7 - Sum of second values in list of tuples
+## 10 - Sum of second values in list of tuples
 Tags: Lists<br>
 ```python
 >>> li = [('Kohli', 10), ('Smith', 4), ('Warner', 9), ('Williamson', 9)]
@@ -137,7 +192,7 @@ print(f"{d}/{m}/{y}")
 ```
 `Output: 06/02/2020`
 
-## 9 - Splitting strings in Python
+## 11 - Splitting strings in Python
 Tags: Lists, Strings<br>
 The `split()` function can be used to split strings in python into a list.
 
