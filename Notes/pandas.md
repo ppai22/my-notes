@@ -1,5 +1,5 @@
 ## 1 - Dataframe from dictionary
-
+Tags: Pandas
 Use of pandas module to create a dataframe directly from a dictionary
 ```python
 data = {'Country': ['India', 'Australia', 'England', 'South Africa'],
@@ -9,7 +9,7 @@ df = pandas.DataFrame.from_dict(data)
 Yes, I am a cricket geek.
 
 ## 2 - Copy columns from one dataframe to new dataframe
-
+Tags: Pandas
 ```python
 data = {'Man Utd': ['Rashford', 'Martial', 'James'],
         'Man City': ['Sterling', 'Aguero', 'Silva'],
@@ -24,7 +24,7 @@ new = old[['Man Utd', 'Man City']].copy()
 Yes, I love football too.
 
 ## 3 - Drop columns from a dataframe
-
+Tags: Pandas
 ```python
 data = {'Man Utd': ['Rashford', 'Martial', 'James'],
         'Man City': ['Sterling', 'Aguero', 'Silva'],
@@ -43,7 +43,7 @@ new = old.drop(columns=['Man Utd', 'Man City'])
 ```
 
 ## 4 - Access columns using column names
-
+Tags: Pandas
 Dataframe used:
 ```python
 >>> dataset = {'India': ['Delhi', 'Mumbai', 'Bengaluru', 'Mumbai'],
@@ -69,7 +69,7 @@ Dataframe used:
 ```
 
 ## 5 - Fetching unique elements from a column
-
+Tags: Pandas
 Making use of data frame from above article:
 ```python
 >>> df.India.unique()
@@ -77,7 +77,7 @@ array(['Delhi', 'Mumbai', 'Bengaluru'], dtype=object)
 ```
 
 ## 6 - Sort Dataframe by column values
-
+Tags: Pandas
 ```python
 pl_dict = {'Man Utd': [3, 1, 1, 10], 'Man City': [4, 0, 1, 12], 'Arsenal': [2, 0, 3, 6], 'Chelsea': [1, 3, 2, 6]}
 df = pandas.DataFrame(pl_dict, columns=['Wins', 'Draws', 'Losses', 'Points'])

@@ -1,5 +1,5 @@
 ## 1 - K-Means Clustering algorithm
-
+Tags: Machine Learning
 K-Means clustering is an unsupervised learning technique. This can be used when unlabeled data is available.
 
 Steps:

@@ -1,5 +1,5 @@
 ## 1 - List Comprehensions
-
+Tags: Lists
 For loop that generates list of first five numbers
 ```python
 li = []
@@ -14,7 +14,7 @@ li = [i for i in range(1, 6)]
 ```
 
 ## 2 - Flatten a list of lists
-
+Tags: Lists
 ```python
 flat_list = []
 for sub_list in li:
@@ -32,7 +32,7 @@ But if ```li = [[1, 2], [3, [4, 5]], [6, 7]]```, then ```flat_list = [1, 2, 3, [
 
 
 ## 3 - Reverse a list
-
+Tags: Lists
 There are 3 methods to reverse a list in python
 
 ##### Method 1: Use of reverse()
@@ -60,7 +60,7 @@ reversed() returns an iterator that accesses the list in reverse order
 ```
 
 ## 4 - Sort a list of tuples by value
-
+Tags: Lists
 The aim is to sort a list of tuples by the first value of the tuple
 
 ##### Method 1: Using lambda function
@@ -83,7 +83,7 @@ To sort inplace, use ```li.sort(<itemgetter/lambda>)```<br>
 [Reference](https://stackoverflow.com/questions/10695139/sort-a-list-of-tuples-by-2nd-item-integer-value)
 
 ## 5 - if-else inside a List Comprehension
-
+Tags: Lists
 ```python
 li = [1, 2, 3, 4, 5, 6]
 output =[]
@@ -119,7 +119,7 @@ output = [(i, 'EVEN') if i%2 == 0 else (i, 'ODD') for i in li]
 ```
 
 ## 7 - Sum of second values in list of tuples
-
+Tags: Lists
 ```python
 >>> li = [('Kohli', 10), ('Smith', 4), ('Warner', 9), ('Williamson', 9)]
 >>> sum(ducks for name, ducks in li)
@@ -138,7 +138,7 @@ print(f"{d}/{m}/{y}")
 `Output: 06/02/2020`
 
 ## 9 - Splitting strings in Python
-
+Tags: Lists, Strings
 The `split()` function can be used to split strings in python into a list.
 
 ```python
