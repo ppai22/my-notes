@@ -91,3 +91,32 @@ To sort the teams based on points and then by wins if there is a tie:
 df = df.sort_values(by=['Points', 'Wins'])
 ```
 [Reference](https://thispointer.com/pandas-sort-rows-or-columns-in-dataframe-based-on-values-using-dataframe-sort_values/)
+
+## 7 - Dataframe to Numpy array
+
+```python
+import pandas as pd
+dataframe = pd.DataFrame({"a": [1, 2, 3, 4], "b": [5, 6, 7, 8], "c": [9, 10, 11, 12]})
+np_arr = dataframe.to_numpy()
+print(dataframe)
+print(np_arr)
+```
+
+The output to the above code is:
+```python
+dataframe:
+   a  b   c
+0  1  5   9
+1  2  6  10
+2  3  7  11
+3  4  8  12
+```
+```python
+np_arr:
+[[ 1  5  9]
+ [ 2  6 10]
+ [ 3  7 11]
+ [ 4  8 12]]
+```
+
+This method is extremely useful if you have read a dataset from a csv file using pandas and then want to pass the input parameters to a Tensorflow model as a numpy array.
