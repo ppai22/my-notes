@@ -1,5 +1,5 @@
 ## 1 - re.match()
-Tags: Regular Expressions
+Tags: Regular Expressions<br>
 re.match() matches only if the pattern exists at the beginning of the string
 ```python
 >>> str1 = 'I love Python'
@@ -11,7 +11,7 @@ None
 ```
 
 ## 2 - re.search()
-Tags: Regular Expressions
+Tags: Regular Expressions<br>
 re.search() matches if the pattern exists anywhere in the string
 ```python
 >>> str1 = 'I love Python'
@@ -23,7 +23,7 @@ re.search() matches if the pattern exists anywhere in the string
 ```
 
 ## 3 - re.findall()
-Tags: Regular Expressions
+Tags: Regular Expressions<br>
 re.findall() finds all non-overlapping matches
 ```python
 >>> str = 'LOLOLOL'
@@ -34,7 +34,7 @@ re.findall() finds all non-overlapping matches
 re.findall has found the first LOL and the last LOL and missed the overlapping middle LOL
 
 ## 4 - re.findall() to find overlapping matches
-Tags: Regular Expressions
+Tags: Regular Expressions<br>
 A lookaround is used to find overlapping matches using re.findall()
 ```python
 >>> str = 'LOLOLOL'
@@ -45,7 +45,7 @@ A lookaround is used to find overlapping matches using re.findall()
 [Reference](https://stackoverflow.com/questions/11430863/how-to-find-overlapping-matches-with-a-regexp)
 
 ## 5 - re.sub()
-Tags: Regular Expressions
+Tags: Regular Expressions<br>
 re.sub() is used to substitute a particular pattern with another string
 ```python
 re.sub(pattern, replacement_string, string)
