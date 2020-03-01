@@ -2,7 +2,7 @@ import re
 import os
 
 
-repo = r'https://github.com/ppai22/my-notes/blob/master/Notes/'
+repo = r'https://github.com/ppai22/my-notes/blob/reformat/Notes/'
 articles = dict()
 for root, dirs, files in os.walk(r'.\Notes'):
     for file in files:
