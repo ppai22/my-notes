@@ -39,4 +39,4 @@ Marcus Rashford is a great footballer. He plays for Manchester United.
 Marcus Rashford is a great footballer. He plays for Manchester United.
 ```
 
-[Reference]("https://realpython.com/python-f-strings/")
+[Reference](https://realpython.com/python-f-strings/)
