@@ -1,4 +1,4 @@
-[Reference](https://pythonprogramming.net/loading-images-python-opencv-tutorial/)
+[Reference](https://pythonprogramming.net/loading-images-python-opencv-tutorial/)<br>
 [Sentdex](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ) is amazing
 
 ## 1 - Read, show and write an image in Open CV

@@ -25,5 +25,5 @@ model.fit_generator(
     validation_data=validation_generator,
     validation_steps=800)
 ```
-```steps_per_epoch``` parameter generally is calculated as ```NO_OF_ITEMS_IN_DATASET // BATCH_SIZE```
+```steps_per_epoch``` parameter generally is calculated as ```NO_OF_ITEMS_IN_DATASET // BATCH_SIZE```<br>
 [Reference](https://towardsdatascience.com/keras-data-generators-and-how-to-use-them-b69129ed779c)
